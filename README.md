@@ -1,10 +1,10 @@
-# 📈 Alltech MCP (Mini Control Panel)
+# 📈 Alltech MCP (Model Context Protocol)
 
 Originally, this project started as a standalone MCP (Model context protocol) server + client setup.  
 After some challenges integrating with the OpenAI SDK — and with OpenAI now allowing **direct tool integrations** —  
 the system was restructured and simplified.
 
-Instead of a full custom server and client, the MCP logic is now built **directly into the  openai adk**.  
+Instead of a full custom server and client, the MCP logic is now built **directly into the  openai sdk**.  
 This keeps it lightweight, faster to deploy, and easier to extend.
 
 ---

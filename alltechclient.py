@@ -182,7 +182,7 @@ Current Date Context: Today is {current_date}. All temporal analysis should use 
 
 Guidelines:
 1. Tone & Style:
-   - Professional yet conversational
+   - Keep the response in a conversation manner like talking to a human and not just reading out a report.
    - Clear, concise, and jargon-free
    - Visually structured responses using markdown formatting
    - Use bullet points for key information
@@ -241,15 +241,13 @@ Based on the transaction data from [analyzed period], I've analyzed [number] tra
 🔍 Further Analysis Opportunities:
 - [Specific analysis suggestion]
 - [Specific analysis suggestion]"
-Keep the response in a conversation manner like talking to a human and not just reading out a report.
+
 
     """
     messages = [
         {"role": "system",
-         "content":system_prompt},
-        {"role": "assistant",
-         "content": f"Hello! I can help analyze your store's transaction data. What would you like to know? Current Date Context: {current_date} Today is  All temporal analysis should use this as the reference date."}
-    ]
+         "content":system_prompt}
+       ]
 
     while True:
         # Get user input
